@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+nav img{
+    width: 200px;
+}
+
+.nav-title{
+    text-align: center;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-title h1{
+    color: white;
+    font-size: 30px;
+}
+
+.nav-title p{
+    color: white;
+    font-size: 20px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #0EF7FC;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: "\A0";
+    width: 0%;
+    height: 2px;
+    background: #0EF7FC;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;    
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+}
+
+.Aoharu {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.Aoharu:hover {
+    border: 1px solid #0EF7FC;
+    background: #0EF7FC;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+.nav-title-m {
+    display: none;
+}
+
+@media(max-width: 1180px) {
+    .nav-title{
+        text-align: center;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+    nav img{
+        width: 200px;
+        height: 161px;
+        display: block;
+        padding-left: 77px;
+        padding-right: 77px;
+    }
+
+    .nav-title h1{
+        display: none;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .nav-title p{
+        display: none;
+    }
+    
+    .text-box h1{
+    padding-top: 150px;
+    font-size: 20px;
+    }
+    
+    .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .nav-title-m{
+        text-align: center;
+        display: block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    
+    .nav-title-m h1{
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .nav-title-m p{
+    color: white;
+    font-size: 15px;
+    }
+    
+    .Aoharu:hover {
+    border: 1px solid #0EF7FC;
+    background: #0EF7FC;
+    transition: 1s;
+    }
+}
+
+/*------------Schools-----------------*/
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top:100px;
+}
+
+.course h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+.row {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Trinity {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.logo1{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.Trinity h3{
+    margin-top: 10px;
+}
+
+.Trinity:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.Millennium{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.logo2{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.Millennium h3{
+    margin-top: 10px;
+}
+
+.Millennium:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.Millennium2{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-color: #000;
+}
+
+.Millennium2 h3{
+    margin-top: 10px;
+    color: #fff;
+}
+
+.Millenium2 p{
+    font-size: large;
+    color:#fff;
+}
+
+
+.Gehenna {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.logo3{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.Gehenna h3{
+    margin-top: 10px;
+}
+
+.Gehenna:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.Kivotos {
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #0EF7FC;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: bold;
+    background:  #0EF7FC;
+    position: relative;
+    cursor: pointer;
+}
+
+.Kivotos:hover {
+    border: 1px solid #0EF7FC;
+    background: transparent;
+    color: #000;
+    transition: 0.5s;
+}
+
+@media(max-width: 1180px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*---------------Events-------------------*/
+
+.events {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.event {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event img{
+    width: 100%;
+}
+
+
+.layer {
+    background: transparent;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer h3{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer p{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translate(-5%, -70%);
+}
+
+.layer:hover{
+    background: rgba(0,248,251,0.8);
+    color: #fff;
+    opacity: 1;
+}
+
+@media(max-width: 1180px) {
+    .layer h3{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+    }
+
+    .layer p{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+    }
+}
+
+/*---------------Locations-------------------*/
+
+.locations {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.location-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.location-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.location-col p{
+    padding: 0;
+}
+
+.location-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+
+/*------VISIT------*/
+
+.visit {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.visit h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.visit p{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.Aoharu2{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.Aoharu2:hover{
+    border: 1px solid #f4f6f6;
+    background: #fdfdfd;
+    transition: 1s;
+    color:#09fdf9;
+}
+
+@media(max-width: 1180px) {
+    .visit h1{
+        font-size: 24px;
+    }
+
+    .visit p{
+        font-size: 20px
+    }
+
+}
+
+/*------Footer------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background:linear-gradient(rgba(4, 9, 30, 0.179), rgba(4, 9, 30, 0)), rgba(0,248,251,0.8);
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: small;
+}
+
+.footer p{
+    font-size: small;
+}
+
+.icons .fa-brands{
+    color:#fefefe;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*-------About us-------*/
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(159, 142, 142, 0.733), rgba(159, 142, 142, 0.733)), url(Images/HifuAzu.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.sub-header h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.info-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    margin-left: 30px;
+}
+
+.info-col img{
+    width: 100%;
+}
+
+.info-col h1{
+    font-style: italic;
+    padding-top: 0;
+}
+
+.info-col p {
+    padding: 15px 0 25px;
+}
+
+.blue {
+    border: 1px solid #02d9f5;
+    background: transparent;
+    color: #0EF7FC;
+}
+
+.blue:hover {
+    color: #fff;
+}
